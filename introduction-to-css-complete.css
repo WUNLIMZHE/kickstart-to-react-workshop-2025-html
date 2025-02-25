@@ -1,0 +1,57 @@
+/* Center align headings and subtitle text */
+h1, h2, .sub-heading {
+  text-align: center;
+}
+
+/* Targets an element with the specific ID "title" and sets its text color to dark blue */
+#title{
+  color: darkblue;
+}
+
+/* Targets all <h3> elements that have an attribute "value" with the exact value of "4" and sets their text color to pink */
+h3[value="4"] {
+  color: pink;
+}
+
+/* Remove default list styles and make the list flexible */
+ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Enables flexbox for horizontal layout */
+  gap: 2rem; /* Adds space between list items */
+  flex-wrap: wrap; /* Allows items to wrap onto new lines if needed */
+  justify-content: center; /* Centers items within the container */
+}
+
+/* Set fixed width and center text for each list item */
+li {
+  width: 15rem; /* Defines a fixed width for each list item */
+  text-align: center; /* Centers text within each list item */
+}
+
+/* Set fixed dimensions for images inside list items */
+li img {
+  height: 6rem; /* Sets a fixed height for consistency */
+  width: 10rem; /* Sets a fixed width for consistency */
+  object-fit: cover; /* Ensures images maintain aspect ratio while covering the area */
+}
+
+/* Add spacing around list item headings */
+li h3 {
+  margin: 0.8rem 0; /* Adds vertical spacing above and below the heading */
+}
+
+/* Increase font size for better readability */
+li p {
+  font-size: 1.2rem; /* Makes paragraph text slightly larger */
+}
+
+/* Center the button container */
+.btn-container {
+  margin-top: 20px; /* Adds space above the button */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers the button horizontally */
+}
+
+

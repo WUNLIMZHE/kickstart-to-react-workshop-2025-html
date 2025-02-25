@@ -1,0 +1,31 @@
+1. Element/tag selector - all elements of the specified type will be affected.
+Example: 
+p { color: blue; } /* All <p> elements will have blue text */
+
+2. class selector - selects all elements that have a specific class
+Example: 
+.highlight { background-color: yellow; } /* Affects all elements with class="highlight" */
+
+3. id selector - selects a single element with a specific ID (must be unique per page)
+Example: 
+#title{ color: darkblue; } /* Affects only the element with id="title" */
+
+4. attribute selector - selects elements that have a specific attribute.
+Example: 
+h3[value="4"]{ color:pink; } /* Targets only h3 with value 4 */
+
+5. universal selector (*) - selects all elements on the page.
+Example: 
+* { margin: 0; padding: 0; } /* Resets margin and padding for all elements */
+
+6. html element selector - targets the <html> element, indirectly affecting the entire document (e.g., setting font-size on <html> impacts rem units throughout the page)
+Example: 
+html { font-size: 16px; } /* Sets the base font size for the whole page */
+
+IMPORTANT NOTE:  All element selected by the selector will be applied with respective CSS style except there's priority intervention
+
+Importance > Type > Specificity > Cascade
+#title{ color: darkblue; color: yellow;}
+Specificity: Id > attribute > class > element
+Type: inline > internal & external
+Importance: presence of !important
